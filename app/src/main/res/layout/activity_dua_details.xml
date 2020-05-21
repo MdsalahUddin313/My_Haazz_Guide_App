@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dua.Dua_details">
+
+    <TextView
+        android:id="@+id/title_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:text="Arabic"
+        android:textSize="35dp"></TextView>
+
+    <TextView
+        android:id="@+id/uccaron_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:padding="10dp"
+        android:layout_below="@+id/title_id"
+        android:text="uccaron"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:gravity="center"
+
+        ></TextView>
+
+
+    <TextView
+        android:id="@+id/description_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uccaron_id"
+        android:text="uccaron"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:padding="25dp"
+        ></TextView>
+
+</RelativeLayout>
