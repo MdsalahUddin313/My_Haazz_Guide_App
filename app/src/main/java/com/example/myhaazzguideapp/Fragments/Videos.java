@@ -9,8 +9,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.myhaazzguideapp.Links_video.MyListAdapter_Link;
 import com.example.myhaazzguideapp.Links_video.WebView_link;
@@ -22,6 +26,9 @@ import com.example.myhaazzguideapp.guide.UserGuide;
 public class Videos extends Fragment {
 
     ListView list;
+    String URL;
+    EditText search_item;
+    ImageButton search;
     String[] maintitle ={
             "How to Perform Hajj-Step By Step Hajj Guide ",
             "Bangla Waz How to Perform Hajj Step by Step in Bangla",
@@ -35,8 +42,8 @@ public class Videos extends Fragment {
     };
 
     Integer[] imgid={
-            R.drawable.one_link,R.drawable.two_link,
-            R.drawable.three_link,R.drawable.four_link,
+            R.drawable.one_l,R.drawable.two_l,
+            R.drawable.three_l,R.drawable.four_l,
     };
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -46,6 +53,22 @@ public class Videos extends Fragment {
         MyListAdapter_Link adapter=new  MyListAdapter_Link(getActivity(), maintitle, subtitle,imgid);
         list=viewGroup.findViewById(R.id.link_listview_id);
         list.setAdapter(adapter);
+
+        search_item=viewGroup.findViewById(R.id.seach_id);
+
+        search=viewGroup.findViewById(R.id.Search_button_id);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(getActivity(), WebView_link.class);
+                URL=search_item.getText().toString().toLowerCase();
+                i.putExtra("pos","4");
+                i.putExtra("Link",URL);
+                Toast.makeText(getActivity(),""+URL,Toast.LENGTH_LONG).show();
+                //https://youtu.be/Hb-ngN7pVyw
+                startActivity(i);
+            }
+        });
 
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {

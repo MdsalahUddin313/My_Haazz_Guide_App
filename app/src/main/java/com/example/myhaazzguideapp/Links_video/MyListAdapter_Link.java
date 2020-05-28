@@ -38,8 +38,10 @@ public class MyListAdapter_Link extends ArrayAdapter<String> {
         TextView subtitleText = (TextView) rowView.findViewById(R.id.subtitle_link);
 
         titleText.setText(maintitle[position]);
-        //imageView.setImageResource(imgid[position]);
+        imageView.setImageResource(imgid[position]);
         subtitleText.setText(subtitle[position]);
+
+
 
         return rowView;
 

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.myhaazzguideapp.R;
 
@@ -14,10 +15,12 @@ public class WebView_link extends AppCompatActivity {
 
     private WebView web;
     TextView t1;
+    String Search_item;
     String[] str1= {"https://youtu.be/Hb-ngN7pVyw",
             "https://www.youtube.com/watch?v=ws47UpVRkgE",
             "https://www.youtube.com/watch?v=Nk68pjWqaXg",
             "https://youtu.be/to_gLNjfDto",
+            "https://www.google.com/search?q=",
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +31,8 @@ public class WebView_link extends AppCompatActivity {
 
         Intent i= getIntent();
         int position=Integer.parseInt(i.getStringExtra("pos"));
-
+        Intent i2= getIntent();
+        Search_item=i.getStringExtra("Link");
         //t1=findViewById(R.id.textView_id);
 
         if(position==0){
@@ -45,6 +49,11 @@ public class WebView_link extends AppCompatActivity {
         else  if(position==3){
             String s4=str1[3];
             webaddress(s4);
+        }
+        else  if(position==4){
+            String s5=(str1[4]+Search_item);
+
+            webaddress(s5);
         }
     }
 

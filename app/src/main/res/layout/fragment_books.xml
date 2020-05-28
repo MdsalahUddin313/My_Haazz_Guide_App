@@ -6,41 +6,70 @@
     android:layout_height="match_parent"
     tools:context=".Fragments.Books">
 
-    <ImageButton
+    <androidx.cardview.widget.CardView
         android:id="@+id/prothomALo_id"
-        android:layout_width="150dp"
-        android:background="@drawable/prothom_alo"
-        android:layout_height="200dp"
-        android:elevation="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="35dp"
+        app:layout_constraintCircleRadius="12dp"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="70dp"
+        app:cardCornerRadius="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageButton>
+        app:layout_constraintTop_toTopOf="parent"
 
+        >
     <ImageButton
-        android:id="@+id/button"
+        android:id="@+id/button1"
         android:layout_width="150dp"
+        android:background="@drawable/prothom_alo"
         android:layout_height="200dp"
-        android:elevation="5dp"
+       ></ImageButton>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="35dp"
         android:text="Button"
-        android:background="@drawable/mushfikur_book"
+
         app:layout_constraintBottom_toBottomOf="@+id/prothomALo_id"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/prothomALo_id"
         app:layout_constraintTop_toTopOf="@+id/prothomALo_id"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        app:cardCornerRadius="8dp"
 
+        >
     <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:background="@drawable/mushfikur_book"
+         /></androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
         android:id="@+id/button3"
-        android:layout_width="335dp"
-        android:layout_height="336dp"
-        android:elevation="5dp"
-        android:background="@drawable/shotcut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/prothomALo_id" />
+        app:layout_constraintTop_toBottomOf="@+id/prothomALo_id"
+        android:elevation="35dp"
+        app:cardCornerRadius="8dp"
+        >
+    <ImageButton
+        android:id="@+id/button4"
+        android:layout_width="335dp"
+        android:layout_height="250dp"
+        android:background="@drawable/shotcut"
+        />
 
-
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

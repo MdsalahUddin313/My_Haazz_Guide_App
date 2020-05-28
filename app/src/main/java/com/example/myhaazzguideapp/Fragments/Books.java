@@ -21,27 +21,27 @@ public class Books extends Fragment implements  View.OnClickListener {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         ViewGroup viewGroup= (ViewGroup) inflater.inflate(R.layout.fragment_books, container, false);
-        buttonOne=viewGroup.findViewById(R.id.prothomALo_id);buttonOne.setOnClickListener(this);
-        buttonTwo=viewGroup.findViewById(R.id.button);buttonTwo.setOnClickListener(this);
-        buttonThree=viewGroup.findViewById(R.id.button3);buttonThree.setOnClickListener(this);
+        buttonOne=viewGroup.findViewById(R.id.button1);buttonOne.setOnClickListener(this);
+        buttonTwo=viewGroup.findViewById(R.id.button2);buttonTwo.setOnClickListener(this);
+        buttonThree=viewGroup.findViewById(R.id.button4);buttonThree.setOnClickListener(this);
     return viewGroup;
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.prothomALo_id:
+            case R.id.button1:
                 Intent i=new Intent(getActivity(), pdf_books.class);
                 i.putExtra("pos","0");
                 startActivity(i);
             break;
-            case R.id.button:
+            case R.id.button2:
                 Intent i2=new Intent(getActivity(), pdf_books.class);
                 i2.putExtra("pos","1");
                 startActivity(i2);
                 break;
 
-            case R.id.button3:
+            case R.id.button4:
                 Intent i3=new Intent(getActivity(), pdf_books.class);
 
                 i3.putExtra("pos","2");startActivity(i3);

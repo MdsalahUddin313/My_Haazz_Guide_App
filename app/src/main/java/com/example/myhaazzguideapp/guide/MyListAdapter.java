@@ -13,16 +13,16 @@ import com.example.myhaazzguideapp.R;
 public class MyListAdapter extends ArrayAdapter<String> {
     private final Activity context;
     private final String[] maintitle;
-    private final String[] subtitle;
+   // private final String[] subtitle;
     //private final Integer[] imgid;
 
-    public MyListAdapter(Activity context, String[] maintitle,String[] subtitle) {
+    public MyListAdapter(Activity context, String[] maintitle) {
         super(context, R.layout.mylist, maintitle);
         // TODO Auto-generated constructor stub
 
         this.context=context;
         this.maintitle=maintitle;
-        this.subtitle=subtitle;
+       // this.subtitle=subtitle;
        // this.imgid=imgid;
 
     }
@@ -33,11 +33,11 @@ public class MyListAdapter extends ArrayAdapter<String> {
 
         TextView titleText = (TextView) rowView.findViewById(R.id.title);
         ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
-        TextView subtitleText = (TextView) rowView.findViewById(R.id.subtitle);
+       // TextView subtitleText = (TextView) rowView.findViewById(R.id.subtitle);
 
         titleText.setText(maintitle[position]);
         //imageView.setImageResource(imgid[position]);
-        subtitleText.setText(subtitle[position]);
+      //  subtitleText.setText(subtitle[position]);
 
         return rowView;
 

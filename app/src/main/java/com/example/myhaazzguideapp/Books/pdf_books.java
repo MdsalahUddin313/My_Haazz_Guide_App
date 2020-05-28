@@ -29,6 +29,9 @@ public class pdf_books extends AppCompatActivity {
         }else if(position==2){
             LoadPDF("shot_cut.pdf");
         }
+        else if(position==3){
+            LoadPDF("registration.pdf");
+        }
 
 
     }
