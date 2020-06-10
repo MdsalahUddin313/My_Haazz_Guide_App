@@ -9,15 +9,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.myhaazzguideapp.Quiz_part.Hajj_quiz;
 import com.example.myhaazzguideapp.Quiz_part.Qibla;
 import com.example.myhaazzguideapp.Quiz_part.Tasbeeh;
 import com.example.myhaazzguideapp.R;
 
-public class Location extends Fragment implements View.OnClickListener{
+public class Location_part extends Fragment implements View.OnClickListener{
 
-    Button Quiz,Tasbeehbtn,Qiblabtn;
+    ImageButton Quiz,Tasbeehbtn,Qiblabtn;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

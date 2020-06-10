@@ -45,7 +45,8 @@
             android:id="@+id/text3_id"
             android:textAlignment="center"
             android:background="@drawable/rounded_shape_edittext"
-            android:textSize="36dp"
+            android:textSize="26dp"
+
             ></EditText>
 
         <Button
@@ -72,7 +73,7 @@
             android:id="@+id/progress_button_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/holo_blue_dark"
+            android:background="@color/bacground"
             android:textColor="@android:color/white"
             android:layout_toLeftOf="@+id/tasbeeh_click_button"
             android:layout_marginRight="35dp"
@@ -91,7 +92,7 @@
             android:id="@+id/reset_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/holo_blue_dark"
+            android:background="@color/bacground"
             android:textColor="@android:color/white"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/tasbeeh_click_button"

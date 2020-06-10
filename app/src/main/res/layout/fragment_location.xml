@@ -1,43 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.Location">
+    android:background="@drawable/back_one"
+    tools:context=".Fragments.Location_part">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/Tasbeeh_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="tasbeeh"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.231" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/Quiz_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Quiz"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/Tasbeeh_id"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/Tasbeeh_id"
-        app:layout_constraintTop_toBottomOf="@+id/Tasbeeh_id"
-        app:layout_constraintVertical_bias="0.303" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:elevation="12dp"
+                app:cardCornerRadius="10dp">
 
-    <Button
-        android:id="@+id/Qibla_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Qibla"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/Quiz_id"
-        app:layout_constraintStart_toStartOf="@+id/Quiz_id"
-        app:layout_constraintTop_toBottomOf="@+id/Quiz_id" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageButton
+                    android:id="@+id/Tasbeeh_id"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="55dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/tasbeeh_logo"
+                    android:padding="52dp"
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_one"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="20dp"
+                android:elevation="12dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageButton
+                    android:id="@+id/Quiz_id"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="55dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/quizes_logo"
+                    android:text="Quiz" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_two"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:elevation="12dp"
+                android:layout_marginBottom="75dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageButton
+                    android:id="@+id/Qibla_id"
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="75dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/qibla" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

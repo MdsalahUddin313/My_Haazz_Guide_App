@@ -16,10 +16,10 @@ public class WebView_link extends AppCompatActivity {
     private WebView web;
     TextView t1;
     String Search_item;
-    String[] str1= {"https://youtu.be/Hb-ngN7pVyw",
-            "https://www.youtube.com/watch?v=ws47UpVRkgE",
-            "https://www.youtube.com/watch?v=Nk68pjWqaXg",
-            "https://youtu.be/to_gLNjfDto",
+    String[] str1= {"https://www.aljazeera.com/focus/hajj/2009/11/2009111895127111168.html",
+            "https://www.hajj.gov.bd/bn/",
+            "https://hajjessential.com.bd/2019/10/01/hajj-umrah-guide-book/",
+            "https://www.islamicfinder.org/news/how-hajj-is-performed-a-step-by-step-guide/",
             "https://www.google.com/search?q=",
     };
     @Override

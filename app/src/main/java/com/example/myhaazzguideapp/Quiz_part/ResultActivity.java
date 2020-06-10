@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.myhaazzguideapp.Fragments.Location;
+import com.example.myhaazzguideapp.BottomNevigation_bar;
+
+import com.example.myhaazzguideapp.Fragments.Location_part;
 import com.example.myhaazzguideapp.R;
 
 public class ResultActivity extends AppCompatActivity {
@@ -43,7 +45,7 @@ public class ResultActivity extends AppCompatActivity {
         btnRestart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(getApplicationContext(), Location.class);
+                Intent in = new Intent(getApplicationContext(), BottomNevigation_bar.class);
                 startActivity(in);
             }
         });

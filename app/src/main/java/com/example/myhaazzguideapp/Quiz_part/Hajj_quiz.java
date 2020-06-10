@@ -11,6 +11,8 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.myhaazzguideapp.BottomNevigation_bar;
+import com.example.myhaazzguideapp.Fragments.Location_part;
 import com.example.myhaazzguideapp.R;
 
 public class Hajj_quiz extends AppCompatActivity {
@@ -149,7 +151,7 @@ public class Hajj_quiz extends AppCompatActivity {
         quitbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
+                Intent intent = new Intent(getApplicationContext(), BottomNevigation_bar.class);
                 startActivity(intent);
             }
         });

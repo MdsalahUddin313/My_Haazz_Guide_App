@@ -10,7 +10,7 @@
     app:cardCornerRadius="15dp"
     android:elevation="10dp"
     android:layout_margin="5dp"
-    android:background="@android:color/holo_blue_dark"
+    android:background="@color/bacground"
 
     >
     <TextView
@@ -18,7 +18,7 @@
         android:layout_height="130dp"
         android:padding="5dp"
         android:id="@+id/grid_text_id"
-        android:background="@android:color/holo_blue_dark"
+        android:background="@color/bacground"
         android:text="nabid"
         android:textColor="@android:color/white"
         android:textSize="15dp"

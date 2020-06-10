@@ -30,14 +30,17 @@ public class Videos extends Fragment {
     EditText search_item;
     ImageButton search;
     String[] maintitle ={
-            "How to Perform Hajj-Step By Step Hajj Guide ",
-            "Bangla Waz How to Perform Hajj Step by Step in Bangla",
-            "How to Perform Hajj Step by Step ","পবিত্র হজ্জ | কি কেন কিভাবে | Hajj"
+            "A step-by-step guide to Hajj | Hajj News | Al Jazeera ",
+            "Bangladesh Hajj Management Portal",
+            "hajj and umrah guide book free download - Hajj Essential",
+            "How Hajj is performed-A step by step Hajj guide"
     };
 
     String[] subtitle ={
-            "English","by Amanullah Madani",
-            "in Bangla 2018","by কি কেন কিভাবে ",
+            "English in Al jazeera",
+            "by Government",
+            "in English",
+            "by Islamic Finder ",
 
     };
 

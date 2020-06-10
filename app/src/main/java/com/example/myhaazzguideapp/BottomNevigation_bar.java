@@ -5,13 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.example.myhaazzguideapp.Fragments.Books;
 import com.example.myhaazzguideapp.Fragments.Dua;
 import com.example.myhaazzguideapp.Fragments.Home;
-import com.example.myhaazzguideapp.Fragments.Location;
+import com.example.myhaazzguideapp.Fragments.Location_part;
 import com.example.myhaazzguideapp.Fragments.Videos;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -59,7 +62,7 @@ public class BottomNevigation_bar extends AppCompatActivity implements BottomNav
                 break;
 
             case R.id.location_Bottom_menu_id:
-                fragment = new Location();
+                fragment = new Location_part();
                 break;
 
         }
@@ -79,5 +82,27 @@ public class BottomNevigation_bar extends AppCompatActivity implements BottomNav
         }
         return false;
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.option_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.About_Us:
+                Intent t=new Intent(BottomNevigation_bar.this,About_us.class);startActivity(t);
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+
 
 }

@@ -8,7 +8,7 @@
     <item
         android:id="@+id/video"
         android:icon="@drawable/ic_slow_motion_video_black_24dp"
-        android:title="Videos"></item>
+        android:title="Browse"></item>
 
     <item
         android:id="@+id/Books_Bottom_menu_id"
@@ -20,6 +20,6 @@
         android:title="Dua"></item>
     <item
         android:id="@+id/location_Bottom_menu_id"
-        android:icon="@drawable/ic_location_on_black_24dp"
-        android:title="location"></item>
+        android:icon="@drawable/ic_question_answer_black_24dp"
+        android:title="Quizes"></item>
 </menu>
